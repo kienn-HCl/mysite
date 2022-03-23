@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://kienn-hcl.github.io/mysite/sitemap.xml

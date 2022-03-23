@@ -2,6 +2,7 @@ baseURL: "https://kienn-hcl.github.io/mysite/"
 title: kienn's note
 paginate: 5
 theme: PaperMod
+publishDir: "docs"
 
 enableRobotsTXT: true
 buildDrafts: false
