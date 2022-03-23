@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://examplesite.com/categories/</loc>
+    <loc>https://kienn-hcl.github.io/mysite/categories/</loc>
     <lastmod>2022-03-23T18:16:47+09:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/</loc>
+    <loc>https://kienn-hcl.github.io/mysite/</loc>
     <lastmod>2022-03-23T18:16:47+09:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/</loc>
+    <loc>https://kienn-hcl.github.io/mysite/posts/</loc>
     <lastmod>2022-03-23T18:16:47+09:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/test/</loc>
+    <loc>https://kienn-hcl.github.io/mysite/posts/test/</loc>
     <lastmod>2022-03-23T18:16:47+09:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/test/</loc>
+    <loc>https://kienn-hcl.github.io/mysite/categories/test/</loc>
     <lastmod>2022-03-23T18:16:47+09:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/archives/</loc>
+    <loc>https://kienn-hcl.github.io/mysite/archives/</loc>
   </url><url>
-    <loc>https://examplesite.com/search/</loc>
+    <loc>https://kienn-hcl.github.io/mysite/search/</loc>
   </url><url>
-    <loc>https://examplesite.com/series/</loc>
+    <loc>https://kienn-hcl.github.io/mysite/series/</loc>
   </url><url>
-    <loc>https://examplesite.com/tags/</loc>
+    <loc>https://kienn-hcl.github.io/mysite/tags/</loc>
   </url>
 </urlset>
