@@ -119,10 +119,10 @@ menu:
       weight: 10
     - name: Tags
       url: /tags/
-      weight: 10
+      weight: 15
     - name: Categories
       url: /categories/
-      weight: 10
+      weight: 20
     #- identifier: categories
     #  name: categories
     #  url: /categories/
@@ -155,3 +155,8 @@ outputs:
         - HTML
         - RSS
         - JSON # is necessary
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true

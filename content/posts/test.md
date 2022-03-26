@@ -1,7 +1,7 @@
 ---
 title: "Test"
 date: 2022-03-23T18:16:47+09:00
-draft: false
+draft: true
 categories: "test"
 ShowToc: true
 math: true
