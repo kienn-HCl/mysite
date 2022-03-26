@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>powerline-goの導入</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/reset.css">
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/reveal.css">
+
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	  <!-- highlight Theme -->
+  	
+	  <link rel="stylesheet" href="libs/highlight.js/11.3.1/styles/monokai.min.css">
+	
+	
+		
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/plugin/chalkboard/style.css">
+	
+	
+	
+		<link rel="stylesheet" href="libs/reveal.js/4.1.3/plugin/customcontrols/style.css">
+	
+	<link rel="stylesheet" href="libs/styles/tasklist.css">
+
+
+
+  <!-- Revealjs Theme -->
+  
+  	<link rel="stylesheet" href="libs/reveal.js/4.1.3/theme/moon.css" id="theme">
+  
+  
+
+
+  <!-- Revealjs Theme -->
+  
+
+ 
+</head>
+
+<body>
+  
+
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      
+
+
+    
+        <section >
+            
+            <h2>ターミナルの見た目を変えた話</h2>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>手元のLinux 環境の変遷</h3>
+<p>以前（一応今も）Alter linux というのをパソコンに直接入れて使ってた。</p>
+<img width="100" src="img\downarrow.svg">
+<p>最近はWSL(windows subsystem for linux) を使っている。</p>
+
+            </section>
+        
+            <section >
+                <h4>（余談）</h4>
+<p>最近はWSL使うのにコマンドプロンプトに</p>
+<p>「wsl --install」と入力するだけでいいみたいですね。</p>
+<p>とても簡単になっててびっくり！</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>WSLに移って問題点というか…</h3>
+<p>ターミナルの見た目が変わっちゃった</p>
+<p class="fragment fade-in">プロンプトを変えたい！</p>
+<figure style="float: left">
+    <img width="450" src="img\terminalalter.png"> 
+    <figcaption>Alter linux デフォルト</figcaption>
+</figure>
+<figure style="float: left">
+    <img width="450" src="img\terminalwsl.png"> 
+    <figcaption>wsl デフォルト</figcaption>
+</figure>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>プロンプトを変えていく</h3>
+<p>Powerline-go というのを使う</p>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>Powerline-go の導入</h3>
+<p>大まかな手順は次のようになった。<br>
+<br></p>
+<ol>
+<li class="fragment fade-in">go言語をインストール</li>
+<li class="fragment fade-in">Powerline-go をインストール</li>
+<li class="fragment fade-in">.zshrc に設定を書き加える</li>
+<li class="fragment fade-in">フォントをインストール</li>
+<li class="fragment fade-in">ターミナルのフォントを変更</li>
+</ol>
+
+            </section>
+        
+            <section >
+                <h4>(補足)</h4>
+<p>私はシェルをzshにしています。
+各自の環境に合わせて適宜.zshrcを.bashrc に読みかえるなどしてください。</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>1. go言語をインストール</h3>
+<p>基本的に <a href="https://go.dev/doc/install">https://go.dev/doc/install</a> に書いてある通りに従う。<br>
+<br>
+<a href="https://go.dev/dl/">https://go.dev/dl/</a> にアクセスして最新版のgoのダウンロードurlをコピー。
+以下をターミナルで実行。</p>
+<pre><code class="language-bash">$ wget (コピーしたurl)
+</code></pre>
+
+            </section>
+        
+            <section >
+                <p>ファイルを解凍</p>
+<pre><code class="language-bash">$ sudo tar -C /usr/local -xzf go1.17.7.linux-amd64.tar.gz
+</code></pre>
+<br>
+$HOME/.zshrc に以下を追加
+<p>(ドキュメントでは$HOME/.profile)</p>
+<pre><code class="language-bash">export PATH=$PATH:/usr/local/go/bin
+</code></pre>
+<p>追加後はターミナルを再起動するなりしてください。</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>2. Powerline-go をインストール</h3>
+<p><a href="https://github.com/justjanne/powerline-go">https://github.com/justjanne/powerline-go</a> のreadmeに書いてある通りに従う。</p>
+<br>
+以下のコマンドを実行してpowerline-go をインストール
+<pre><code class="language-bash">$ go install github.com/justjanne/powerline-go@latest
+</code></pre>
+<p>この後の作業のためにGOPATHというのを設定しないといけないらしいので以下を.zshrc に追加。</p>
+<pre><code class="language-bash">GOPATH=$HOME/go
+</code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>3. .zshrc に設定を書き加える</h3>
+<p>.zshrc に以下を追加。（コピペしてきたやつ）</p>
+<img width="750" src="img\powerlinesettei.png" >
+<p>この後ターミナルを再起動するなりしてください。</p>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>4. フォントをインストール</h3>
+<p>これまでの設定で以下のようになっている。</p>
+<img width="600" src="img\mozibake.png">
+<p class="fragment fade-in">文字化けしてる……</p>
+<p class="fragment fade-in">解決するには特殊なフォントが必要</p>
+
+            </section>
+        
+            <section >
+                <p><a href="https://github.com/AaronFriel/nerd-fonts/releases/tag/v1.2.0">https://github.com/AaronFriel/nerd-fonts/releases/tag/v1.2.0</a> からCascadiaCode.Nerd.Font.Complete.ttf をダウンロード。</p>
+<p>ファイルを開いてインストール（これはWindows にインストール）</p>
+<img width="600" src="img\nerdfontinstall.png">
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>5. ターミナルのフォントを変更</h3>
+<p>私はWindows Terminal といいうのを使っているのでそこの設定で変更</p>
+<div class="r-stack">
+    <img src="img\fontchange.svg" width="750">
+    <img class="fragment" src="img\fontchanged.svg" width="750">
+</div>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>完成</h3>
+<img src="img\kannsei.png" width="750">
+
+            </section>
+    
+
+
+    </div>
+
+
+  </div>
+
+  	
+	<script src="libs/reveal.js/4.1.3/reveal.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/zoom/zoom.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/notes/notes.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/search/search.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/markdown/markdown.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/highlight/highlight.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/menu/menu.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/math/math.js"></script>
+
+	<script src="libs/reveal.js/4.1.3/plugin/fullscreen/plugin.js"></script>
+  
+  	<script src="libs/reveal.js/4.1.3/plugin/animate/plugin.js"></script>
+  	<script src="libs/reveal.js/4.1.3/plugin/animate/svg.min.js"></script>
+  
+  	 <!--	<script src="libs/reveal.js/4.1.3/plugin/anything/plugin.js"></script> -->
+
+ <!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/RecordRTC.js"></script>-->
+
+
+	<script src="libs/reveal.js/4.1.3/plugin/customcontrols/plugin.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/embed-tweet/plugin.js"></script>
+
+	<script src="libs/reveal.js/4.1.3/plugin/chart/chart.min.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/chart/plugin.js"></script>
+
+  <script>
+
+		const printPlugins = [
+			RevealNotes, 
+			RevealHighlight,
+			RevealMath,
+			RevealAnimate,
+			
+			RevealEmbedTweet,
+			RevealChart,
+		];
+
+		const plugins =  [...printPlugins,
+		RevealZoom, 
+		RevealSearch, 
+				RevealMarkdown, 
+				RevealMenu, 
+				RevealFullscreen,
+				//RevealAnything,
+				//RevealAudioSlideshow,
+				//RevealAudioRecorder,
+				RevealCustomControls, 
+				// poll
+				// question
+				// seminar
+				 ]
+
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			controlsTutorial: true,
+			controlsLayout: 'bottom-right',
+			controlsBackArrows: 'faded',
+			progress: true,
+			slideNumber: true,
+			//#showSlideNumber "all" "print" "speaker"
+			hash: true,//#  hash: false,
+			//# respondToHashChanges: true,
+			//# history: false,
+			keyboard: true,
+			//#keyboardCondition: null,
+			overview: true,
+			center: true,
+			touch: true,
+			loop: false,
+			rtl: false,
+			//#navigationMode: 'default', linear grid
+			shuffle: false,
+			fragments: true,
+			fragmentInURL: false,
+			embedded: false,
+			help: true,
+			//#pause: true
+			showNotes: false,
+			autoPlayMedia: false, // TODO fix this to a nullable value
+			//#preloadIframes: null. true false
+			//#autoAnimate: true
+			//#autoAnimateMatcher: null,
+			//#autoAnimateEasing: 'ease',
+			//autoAnimateDuration: 1.0,
+			//#autoAnimateUnmatched: true
+			//#autoAnimateStyles: []
+			autoSlide: 0, // TODO fix this to a falseable value
+			autoSlideStoppable: true,
+			autoSlideMethod: '0',
+			defaultTiming: 120,
+			mouseWheel: true,
+			//#previewLinks: false
+			//#postMessage: true,  // TODO : this can cause issues with the vscode api ???
+			//#postMessageEvents: false,
+			//#focusBodyOnPageVisibilityChange: true,
+			transition: 'convex',
+			transitionSpeed: 'default',
+			backgroundTransition: 'fade',
+			//#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+			//#pdfSeparateFragments: true,
+			//#pdfPageHeightOffset: -1,
+			viewDistance: 3,
+			//#mobileViewDistance: 2,
+			display: 'block',
+			//#hideInactiveCursor: true,
+			//#hideCursorTime: 5000
+
+			// Parallax Background
+			parallaxBackgroundImage: '',
+			parallaxBackgroundSize: '',
+			parallaxBackgroundHorizontal: 0,
+			parallaxBackgroundVertical: 0,
+			
+			//Presentation Size
+			width: 960,
+			height: 700,
+			margin: 0.04,
+			minScale: 0.2,
+			maxScale: 2,
+			disableLayout: false,
+
+			audio: {
+				prefix: 'audio/', 	// audio files are stored in the "audio" folder
+				suffix: '.ogg',		// audio files have the ".ogg" ending
+				textToSpeechURL: null,  // the URL to the text to speech converter
+				defaultNotes: false, 	// use slide notes as default for the text to speech converter
+				defaultText: false, 	// use slide text as default for the text to speech converter
+				advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+				autoplay: false,	// automatically start slideshow
+				defaultDuration: 5,	// default duration in seconds if no audio is available
+				defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
+				playerOpacity: 0.05,	// opacity value of audio player if unfocused
+				playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+				startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+			},
+			
+			customcontrols: {
+					controls: [
+      						{
+						  id: 'toggle-overview',
+						  title: 'Toggle overview (O)',
+						  icon: '<i class="fa fa-th"></i>',
+						  action: 'Reveal.toggleOverview();'
+						}
+						
+				]
+			},
+			chart: {
+					defaults: { 
+						color: 'lightgray', // color of labels
+						scale: { 
+							beginAtZero: true, 
+							ticks: { stepSize: 1 },
+							grid: { color: "lightgray" } , // color of grid lines
+						},
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] }, 
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+			},
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: (window.location.search.match(/print-pdf/gi) ? printPlugins : plugins ) 
+		});
+			
+
+
+	    // Change chalkboard theme : 
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+			Reveal.getPlugin("RevealChalkboard").configure(config);
+			input.blur();
+		}
+
+		// // Handle the message inside the webview
+        // window.addEventListener('message', event => {
+
+        //     const message = event.data; // The JSON data our extension sent
+
+        //     switch (message.command) {
+        //         case 'refactor':
+        //             Reveal.toggleHelp();
+        //     }
+        // });
+
+		if (window.location.search.match(/print-pdf-now/gi)) {
+      		setTimeout(() => {
+				window.print();
+			  }, 2500);
+			
+    }
+		
+
+	</script>
+
+</body>
+
+</html>
