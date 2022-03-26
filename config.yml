@@ -43,7 +43,7 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "/twittericon.drawio.svg"
+    favicon: "twittericon.drawio.svg"
     # favicon16x16: "<link / abs url>"
     # favicon32x32: "<link / abs url>"
     # apple_touch_icon: "<link / abs url>"
@@ -51,7 +51,7 @@ params:
 
   label:
     text: "Kienn's note"
-    icon: /twittericon.drawio.svg
+    icon: twittericon.drawio.svg
     iconHeight: 50
 
   # profile-mode
