@@ -1,7 +1,7 @@
 ---
 title: "hugoでLaTeX表示できるようにした備忘録"
 date: 2022-03-29T00:47:11+09:00
-draft: true
+draft: false
 categories: "hugo"
 tags: ["KaTeX", "hugo setting", "memo"]
 ShowToc: true

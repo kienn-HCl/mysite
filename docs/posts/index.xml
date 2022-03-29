@@ -5,7 +5,19 @@
     <link>https://kienn-hcl.github.io/mysite/posts/</link>
     <description>Recent content in Posts on kienn&#39;s note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 26 Mar 2022 20:56:18 +0900</lastBuildDate><atom:link href="https://kienn-hcl.github.io/mysite/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Mar 2022 00:47:11 +0900</lastBuildDate><atom:link href="https://kienn-hcl.github.io/mysite/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugoでLaTeX表示できるようにした備忘録</title>
+      <link>https://kienn-hcl.github.io/mysite/posts/latex_hugo/</link>
+      <pubDate>Tue, 29 Mar 2022 00:47:11 +0900</pubDate>
+      
+      <guid>https://kienn-hcl.github.io/mysite/posts/latex_hugo/</guid>
+      <description>hugoでLaTeXでの数式が表示されるように設定した時のメモ
+テーマはPaperModでの話です。KaTeXを使用。
+手順 1. /layouts/partials/math.html の作成 /layouts/partials/math.html を作る。math.htmlの中にはAuto-render Extensionのページにある以下のコードを貼り付ける。
+&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css&amp;#34; integrity=&amp;#34;sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js&amp;#34; integrity=&amp;#34;sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js&amp;#34; integrity=&amp;#34;sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt;  document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function() {  renderMathInElement(document.body, {  // customised options  // • auto-render specific keys, e.g.:  delimiters: [  {left: &amp;#39;$$&amp;#39;, right: &amp;#39;$$&amp;#39;, display: true},  {left: &amp;#39;$&amp;#39;, right: &amp;#39;$&amp;#39;, display: false},  {left: &amp;#39;\\(&amp;#39;, right: &amp;#39;\\)&amp;#39;, display: false},  {left: &amp;#39;\\[&amp;#39;, right: &amp;#39;\\]&amp;#39;, display: true}  ],  // • rendering keys, e.</description>
+    </item>
+    
     <item>
       <title>スライド置き場</title>
       <link>https://kienn-hcl.github.io/mysite/posts/slide/</link>
