@@ -1,5 +1,5 @@
 ---
-title: "hugoでLaTeX表示できるようにした備忘録"
+title: "hugoで$\\LaTeX$表示できるようにした備忘録"
 date: 2022-03-29T00:47:11+09:00
 draft: false
 categories: "hugo"
@@ -7,7 +7,7 @@ tags: ["KaTeX", "hugo setting", "memo"]
 ShowToc: true
 ---
 
-hugoでLaTeXでの数式が表示されるように設定した時のメモ
+hugoで$\LaTeX$での数式が表示されるように設定した時のメモ
 
 テーマはPaperModでの話です。KaTeXを使用。
 
