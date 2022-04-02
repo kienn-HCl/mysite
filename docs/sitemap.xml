@@ -2,8 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kienn-hcl.github.io/mysite/tags/biseki/</loc>
+    <lastmod>2022-04-02T15:31:20+09:00</lastmod>
+  </url><url>
     <loc>https://kienn-hcl.github.io/mysite/categories/</loc>
-    <lastmod>2022-03-29T00:47:11+09:00</lastmod>
+    <lastmod>2022-04-02T15:31:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kienn-hcl.github.io/mysite/</loc>
+    <lastmod>2022-04-02T15:31:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kienn-hcl.github.io/mysite/categories/math/</loc>
+    <lastmod>2022-04-02T15:31:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kienn-hcl.github.io/mysite/posts/</loc>
+    <lastmod>2022-04-02T15:31:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kienn-hcl.github.io/mysite/tags/</loc>
+    <lastmod>2022-04-02T15:31:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kienn-hcl.github.io/mysite/posts/bisekimemo/</loc>
+    <lastmod>2022-04-02T15:31:20+09:00</lastmod>
   </url><url>
     <loc>https://kienn-hcl.github.io/mysite/categories/hugo/</loc>
     <lastmod>2022-03-29T00:47:11+09:00</lastmod>
@@ -17,16 +35,7 @@
     <loc>https://kienn-hcl.github.io/mysite/tags/katex/</loc>
     <lastmod>2022-03-29T00:47:11+09:00</lastmod>
   </url><url>
-    <loc>https://kienn-hcl.github.io/mysite/</loc>
-    <lastmod>2022-03-29T00:47:11+09:00</lastmod>
-  </url><url>
     <loc>https://kienn-hcl.github.io/mysite/tags/memo/</loc>
-    <lastmod>2022-03-29T00:47:11+09:00</lastmod>
-  </url><url>
-    <loc>https://kienn-hcl.github.io/mysite/posts/</loc>
-    <lastmod>2022-03-29T00:47:11+09:00</lastmod>
-  </url><url>
-    <loc>https://kienn-hcl.github.io/mysite/tags/</loc>
     <lastmod>2022-03-29T00:47:11+09:00</lastmod>
   </url><url>
     <loc>https://kienn-hcl.github.io/mysite/tags/browser-extension/</loc>

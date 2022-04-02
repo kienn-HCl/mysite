@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>math on kienn&#39;s note</title>
+    <link>https://kienn-hcl.github.io/mysite/categories/math/</link>
+    <description>Recent content in math on kienn&#39;s note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 02 Apr 2022 15:31:20 +0900</lastBuildDate><atom:link href="https://kienn-hcl.github.io/mysite/categories/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>微積分で覚えるといいかもしれない公式など</title>
+      <link>https://kienn-hcl.github.io/mysite/posts/bisekimemo/</link>
+      <pubDate>Sat, 02 Apr 2022 15:31:20 +0900</pubDate>
+      
+      <guid>https://kienn-hcl.github.io/mysite/posts/bisekimemo/</guid>
+      <description>私が微分積分学での中間試験で覚えといて役に立ったものをメモとして残しときます。
+間違いがあるかもしれないので各自の責任で持ってご活用ください。また、もし間違いを見つけた人がいたら私のtwitterなどに連絡をくれるとありがたいです。
+ $$(x^x)^{\prime} = x^x(\log x +1)\\[22pt]$$
+$$ \begin{align*} (\sin^{-1} x)^{\prime} &amp;amp;= \frac{1}{\sqrt{1-x^2}}\\[11pt] (\cos^{-1} x)^{\prime} &amp;amp;= -\frac{1}{\sqrt{1-x^2}}\\[11pt] (\tan^{-1} x)^{\prime} &amp;amp;= \frac{1}{1+x^2} \end{align*} $$
+ $$\cos(\sin^{-1} x) = \sin(\cos^{-1} x) = \sqrt{1-x^2}$$
+$$\tan(\sin^{-1} x) = \frac{\sin(\sin^{-1} x)}{\cos(\sin^{-1} x)} = \frac{x}{\sqrt{1-x^2}}$$
+$$\tan(\cos^{-1} x) = \frac{\sin(\cos^{-1} x)}{\cos(\cos^{-1} x)} = \frac{\sqrt{1-x^2}}{x}$$
+ $$\cos(\tan^{-1} x)=\frac{1}{\sqrt{1+x^2}}$$
+$$\sin(\tan^{-1} x) = \tan(\tan^{-1} x) \cdot \cos(\tan^{-1} x) = \frac{x}{\sqrt{1+x^2}}$$
+ $$(\tan x)^{\prime} = \frac{1}{\cos^2 x}$$
+$$\left(\frac{1}{\tan x}\right)^{\prime} = -\frac{1}{\sin^2 x}$$</description>
+    </item>
+    
+  </channel>
+</rss>
