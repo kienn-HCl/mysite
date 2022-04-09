@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kienn-hcl.github.io/mysite/categories/</loc>
+    <lastmod>2022-04-10T00:21:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kienn-hcl.github.io/mysite/</loc>
+    <lastmod>2022-04-10T00:21:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kienn-hcl.github.io/mysite/tags/koken/</loc>
+    <lastmod>2022-04-10T00:21:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kienn-hcl.github.io/mysite/posts/</loc>
+    <lastmod>2022-04-10T00:21:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kienn-hcl.github.io/mysite/tags/r/</loc>
+    <lastmod>2022-04-10T00:21:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kienn-hcl.github.io/mysite/posts/creategraphinr/</loc>
+    <lastmod>2022-04-10T00:21:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kienn-hcl.github.io/mysite/tags/</loc>
+    <lastmod>2022-04-10T00:21:20+09:00</lastmod>
+  </url><url>
+    <loc>https://kienn-hcl.github.io/mysite/categories/tech/</loc>
+    <lastmod>2022-04-10T00:21:20+09:00</lastmod>
+  </url><url>
     <loc>https://kienn-hcl.github.io/mysite/tags/biseki/</loc>
     <lastmod>2022-04-02T15:31:20+09:00</lastmod>
   </url><url>
-    <loc>https://kienn-hcl.github.io/mysite/categories/</loc>
-    <lastmod>2022-04-02T15:31:20+09:00</lastmod>
-  </url><url>
-    <loc>https://kienn-hcl.github.io/mysite/</loc>
-    <lastmod>2022-04-02T15:31:20+09:00</lastmod>
-  </url><url>
     <loc>https://kienn-hcl.github.io/mysite/categories/math/</loc>
-    <lastmod>2022-04-02T15:31:20+09:00</lastmod>
-  </url><url>
-    <loc>https://kienn-hcl.github.io/mysite/posts/</loc>
-    <lastmod>2022-04-02T15:31:20+09:00</lastmod>
-  </url><url>
-    <loc>https://kienn-hcl.github.io/mysite/tags/</loc>
     <lastmod>2022-04-02T15:31:20+09:00</lastmod>
   </url><url>
     <loc>https://kienn-hcl.github.io/mysite/posts/bisekimemo/</loc>
@@ -39,9 +51,6 @@
     <lastmod>2022-03-29T00:47:11+09:00</lastmod>
   </url><url>
     <loc>https://kienn-hcl.github.io/mysite/tags/browser-extension/</loc>
-    <lastmod>2022-03-26T20:56:18+09:00</lastmod>
-  </url><url>
-    <loc>https://kienn-hcl.github.io/mysite/categories/tech/</loc>
     <lastmod>2022-03-26T20:56:18+09:00</lastmod>
   </url><url>
     <loc>https://kienn-hcl.github.io/mysite/tags/vim/</loc>

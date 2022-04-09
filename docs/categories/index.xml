@@ -5,7 +5,16 @@
     <link>https://kienn-hcl.github.io/mysite/categories/</link>
     <description>Recent content in Categories on kienn&#39;s note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 Apr 2022 15:31:20 +0900</lastBuildDate><atom:link href="https://kienn-hcl.github.io/mysite/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Apr 2022 00:21:20 +0900</lastBuildDate><atom:link href="https://kienn-hcl.github.io/mysite/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tech</title>
+      <link>https://kienn-hcl.github.io/mysite/categories/tech/</link>
+      <pubDate>Sun, 10 Apr 2022 00:21:20 +0900</pubDate>
+      
+      <guid>https://kienn-hcl.github.io/mysite/categories/tech/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>math</title>
       <link>https://kienn-hcl.github.io/mysite/categories/math/</link>
@@ -21,15 +30,6 @@
       <pubDate>Tue, 29 Mar 2022 00:47:11 +0900</pubDate>
       
       <guid>https://kienn-hcl.github.io/mysite/categories/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tech</title>
-      <link>https://kienn-hcl.github.io/mysite/categories/tech/</link>
-      <pubDate>Sat, 26 Mar 2022 20:56:18 +0900</pubDate>
-      
-      <guid>https://kienn-hcl.github.io/mysite/categories/tech/</guid>
       <description></description>
     </item>
     

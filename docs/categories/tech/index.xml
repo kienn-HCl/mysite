@@ -5,7 +5,21 @@
     <link>https://kienn-hcl.github.io/mysite/categories/tech/</link>
     <description>Recent content in tech on kienn&#39;s note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 26 Mar 2022 20:56:18 +0900</lastBuildDate><atom:link href="https://kienn-hcl.github.io/mysite/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Apr 2022 00:21:20 +0900</lastBuildDate><atom:link href="https://kienn-hcl.github.io/mysite/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rで関数のグラフを作った話</title>
+      <link>https://kienn-hcl.github.io/mysite/posts/creategraphinr/</link>
+      <pubDate>Sun, 10 Apr 2022 00:21:20 +0900</pubDate>
+      
+      <guid>https://kienn-hcl.github.io/mysite/posts/creategraphinr/</guid>
+      <description>これは工研ブログリレー2022の10日目の記事です。 9日の記事はもっちゃんさんの電気通信大学で生き残るための序盤の布石です。UECサバイバルでのテクニックが書いてあるのでぜひご一読を。
+さて、私は最近微積分で覚えるといいかもしれない公式などというのを書いたのですが、そこで関数のグラフを描くのにRを使ってみたのでそのことについて書いていこうと思います。なぜRを使ったのかというと、なんとなくです。特に理由はないですね。
+3日目の記事と若干ネタ被りしちゃいました&amp;hellip;ごめんなさい&amp;hellip;
+ちなみに筆者はR初心者なので何か間違ってることなどがあったらTwitterなどで連絡してくださるとうれしいです。
+やったことの要約 Rと統合開発環境であるRStudioはインストール済みであることを想定しています。 RStudio上で以下を入力していく。
+install.packages(&amp;#34;tidyverse&amp;#34;) #以前一回でも実行したことがあるのなら不要 library(ggplot2) #library(tidyverse) でもよい library(patchwork) #複数のグラフを並べて表示する用  g1 &amp;lt;- ggplot(data.frame(x=c(-3,3))) + aes(x) + stat_function(fun=function(x) sinh(x)) + coord_cartesian(ylim = c(-3,3)) + labs(title = &amp;#34;sinh(x)&amp;#34;) + theme_linedraw(base_family = &amp;#34;Times New Roman&amp;#34;) g2 &amp;lt;- ggplot(data.frame(x=c(-3,3))) + aes(x) + stat_function(fun=function(x) cosh(x)) + coord_cartesian(ylim = c(0,6)) + labs(title = &amp;#34;cosh(x)&amp;#34;) + theme_linedraw(base_family = &amp;#34;Times New Roman&amp;#34;) g3 &amp;lt;- ggplot(data.frame(x=c(-3,3))) + aes(x) + stat_function(fun=function(x) tanh(x)) + coord_cartesian(ylim = c(-3,3)) + labs(title = &amp;#34;tanh(x)&amp;#34;) + theme_linedraw(base_family = &amp;#34;Times New Roman&amp;#34;)  g1|g2|g3 ※そのままでも問題ないかもしれませんが、グラフの表示のためにRStudioのメニューから「Tools」→「Global Options」を押して「General」内の「Graphics」でBacendをAGGにしておくとよいかもしれません。</description>
+    </item>
+    
     <item>
       <title>Vimiumのすすめ</title>
       <link>https://kienn-hcl.github.io/mysite/posts/vimium/</link>
